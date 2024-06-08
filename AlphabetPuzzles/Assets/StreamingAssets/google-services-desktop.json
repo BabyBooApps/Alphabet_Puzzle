@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "500664401782",
+    "firebase_url": "https://abc-alphabet-tracing.firebaseio.com",
+    "project_id": "abc-alphabet-tracing",
+    "storage_bucket": "abc-alphabet-tracing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500664401782:android:271d683517dcb1a0",
+        "android_client_info": {
+          "package_name": "com.edubuzzkids.abc_tracing_game_kids_toddlers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500664401782-eivskjelfj6dvna06p3kmr3keba4m9p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD20ZTrcetLJOCNOmrXA_mkSOmKwRrDD2g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500664401782:android:92148c6f849b13dc",
+        "android_client_info": {
+          "package_name": "com.ragassoft.alphabetpuzzlesfortoddlers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500664401782-eivskjelfj6dvna06p3kmr3keba4m9p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD20ZTrcetLJOCNOmrXA_mkSOmKwRrDD2g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
