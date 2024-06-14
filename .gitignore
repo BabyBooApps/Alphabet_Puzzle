@@ -1,9 +1,9 @@
 # Ignore Visual Studio Code settings
-.vscode/
+#.vscode/
 
 *.apk
 *.aab
-*.zip
+#*.zip
 
 # Ignore Visual Studio files
 *.suo
@@ -27,13 +27,19 @@
 #*.rtf
 
 # Ignore generic 3D model files
-*.fbx
+#*.fbx
 
 # Ignore any file with a .lock extension
-*.lock
+#*.lock
 
 
 # Ignore Unity Library folder
-Library/
+#Library/
 
-.vs/
+#.vs/
+AlphabetPuzzles/.vs/AlphabetPuzzles/v15/Server/sqlite3/storage.ide-shm
+AlphabetPuzzles/.vs/AlphabetPuzzles/v15/Server/sqlite3/storage.ide-wal
+AlphabetPuzzles/APk/64_Bit/alphabet_puzzles_for_toddlers_VC_19_VN_1_5-1.5-v19.symbols.zip
+AlphabetPuzzles/APk/64_Bit/alphabet_puzzles_for_toddlers_VC_20_VN_1_5.1-1.5.1-v20.symbols.zip
+AlphabetPuzzles/APk/64_Bit/alphabet_puzzles_for_toddlers_VC_21_VN_1_5.2-1.5.2-v21.symbols.zip
+AlphabetPuzzles/APk/64_Bit/alphabet_puzzles_for_toddlers_VC_22_VN_1.5.3-1.5.3-v22.symbols.zip
