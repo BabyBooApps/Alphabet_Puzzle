@@ -56,11 +56,11 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.4\Runtime\AppleStub\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.4\Runtime\AppleStub\iOSStoreBindings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\AppleStub\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\AppleStub\iOSStoreBindings.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Library\PackageCache\com.unity.purchasing@4.9.4\Runtime\AppleStub\UnityEngine.Purchasing.AppleStub.asmdef" />
+    <None Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\AppleStub\UnityEngine.Purchasing.AppleStub.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

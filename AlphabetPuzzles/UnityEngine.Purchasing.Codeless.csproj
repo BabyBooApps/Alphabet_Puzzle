@@ -56,18 +56,18 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.4\Runtime\Codeless\CodelessIAPStoreListener.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.4\Runtime\Codeless\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.4\Runtime\Codeless\IAPConfigurationHelper.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.4\Runtime\Codeless\CodelessButtonType.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.4\Runtime\Codeless\IAPButton.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.4\Runtime\Codeless\CodelessIAPButton.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.4\Runtime\Codeless\IAPListener.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.4\Runtime\Codeless\ComboBox.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.4\Runtime\Codeless\BaseIAPButton.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Codeless\CodelessIAPStoreListener.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Codeless\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Codeless\IAPConfigurationHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Codeless\CodelessButtonType.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Codeless\IAPButton.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Codeless\CodelessIAPButton.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Codeless\IAPListener.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Codeless\ComboBox.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Codeless\BaseIAPButton.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Library\PackageCache\com.unity.purchasing@4.9.4\Runtime\Codeless\UnityEngine.Purchasing.Codeless.asmdef" />
+    <None Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Codeless\UnityEngine.Purchasing.Codeless.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -747,13 +747,13 @@
       <Project>{D21828AE-A1F6-2C3F-E071-98B27BBAFB72}</Project>
       <Name>UnityEngine.Purchasing.Stores</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{2149D699-340C-11AD-646E-2D6B697029D7}</Project>
-      <Name>UnityEditor.UI</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{D72EF7FC-7993-3369-E7DE-CA4EBF033FD3}</Project>
       <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{2149D699-340C-11AD-646E-2D6B697029D7}</Project>
+      <Name>UnityEditor.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

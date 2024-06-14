@@ -56,11 +56,11 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.4\Runtime\AppleCore\INativeAppleStore.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.4\Runtime\AppleCore\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\AppleCore\INativeAppleStore.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\AppleCore\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Library\PackageCache\com.unity.purchasing@4.9.4\Runtime\AppleCore\UnityEngine.Purchasing.AppleCore.asmdef" />
+    <None Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\AppleCore\UnityEngine.Purchasing.AppleCore.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -732,13 +732,13 @@
       <Project>{0AAA4177-754C-3B51-A9AF-BDEE0F36F503}</Project>
       <Name>Purchasing.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{2149D699-340C-11AD-646E-2D6B697029D7}</Project>
-      <Name>UnityEditor.UI</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{D72EF7FC-7993-3369-E7DE-CA4EBF033FD3}</Project>
       <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{2149D699-340C-11AD-646E-2D6B697029D7}</Project>
+      <Name>UnityEditor.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

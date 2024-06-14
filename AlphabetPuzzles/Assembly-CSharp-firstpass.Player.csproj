@@ -749,6 +749,10 @@
       <Project>{B5C48DFE-79DE-A64D-1955-84D250396ED1}</Project>
       <Name>UnityEngine.Purchasing.Stores.Player</Name>
     </ProjectReference>
+    <ProjectReference Include="UnityEngine.Advertisements.Player.csproj">
+      <Project>{F8B36F76-D617-0FD9-8789-7D66DF2FE1B7}</Project>
+      <Name>UnityEngine.Advertisements.Player</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

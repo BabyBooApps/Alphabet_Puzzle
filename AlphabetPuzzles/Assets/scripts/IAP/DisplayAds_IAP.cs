@@ -7,15 +7,15 @@ using UnityEngine.Advertisements;
 
 public class DisplayAds_IAP : MonoBehaviour
 {
-    string appId = "ca-app-pub-3940256099942544~3347511713"; // test App id
-    //string appId = "ca-app-pub-3176152248788238~6766831249";//"ca-app-pub-4357894923588656~8844150327";
-    string UnityAdId = "3173654";//"1497863";
+   // string appId = "ca-app-pub-6727597482466175~3626105304"; // test App id
+    string appId = "ca-app-pub-6727597482466175~3626105304";//"ca-app-pub-4357894923588656~8844150327";
+    string UnityAdId = "5594709";//"1497863";
 
-    string adUnitId_AdmobBanner = "ca-app-pub-3940256099942544/6300978111"; // test
-    //static string adUnitId_AdmobBanner = "ca-app-pub-3176152248788238/3140122018";//"ca-app-pub-4357894923588656/2797616729"; //Alphabet Puzzles Banner
+    //string adUnitId_AdmobBanner = "ca-app-pub-6727597482466175/9844029292"; // test
+    static string adUnitId_AdmobBanner = "ca-app-pub-6727597482466175/9844029292";//"ca-app-pub-4357894923588656/2797616729"; //Alphabet Puzzles Banner
 
-    string adUnitId_AdmobInterstitial = "ca-app-pub-3940256099942544/1033173712"; // test																				 
-    //static string adUnitId_AdmobInterstitial = "ca-app-pub-3176152248788238/9513958675";//"ca-app-pub-4357894923588656/5701941290"; //Alphabet Puzzles Interstitial	
+    //string adUnitId_AdmobInterstitial = "ca-app-pub-6727597482466175/7217865958"; // test																				 
+    static string adUnitId_AdmobInterstitial = "ca-app-pub-6727597482466175/7217865958";//"ca-app-pub-4357894923588656/5701941290"; //Alphabet Puzzles Interstitial	
 
 
     public static BannerView bannerView = null;

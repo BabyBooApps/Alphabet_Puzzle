@@ -81,7 +81,7 @@ public class MenuButtons : MonoBehaviour
     public void LoadMoreGames()
     {
         PlaySound();
-        Application.OpenURL("https://play.google.com/store/apps/dev?id=5183235697422098559");
+        Application.OpenURL("https://play.google.com/store/apps/dev?id=6487105028651572662");
     }
 
     public void OpenPlaystore(string url)

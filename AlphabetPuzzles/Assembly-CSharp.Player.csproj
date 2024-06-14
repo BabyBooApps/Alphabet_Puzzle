@@ -111,6 +111,7 @@
     <Compile Include="Assets\GoogleMobileAds\Common\IMobileAdsClient.cs" />
     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\RewardBasedVideoAdClient.cs" />
     <Compile Include="Assets\scripts\MenuButtons.cs" />
+    <Compile Include="Assets\scripts\CameraAspectRatio.cs" />
     <Compile Include="Assets\scripts\Fading.cs" />
     <Compile Include="Assets\scripts\InitializingSceneScript.cs" />
     <Compile Include="Assets\scripts\Random.cs" />
@@ -120,7 +121,6 @@
     <Compile Include="Assets\scripts\MapShadows\Controller.cs" />
     <Compile Include="Assets\scripts\Database\DataFeed.cs" />
     <Compile Include="Assets\GoogleMobileAds\Common\ICustomNativeTemplateClient.cs" />
-    <Compile Include="Assets\scripts\CameraAspectRatio.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Parse\Plugins\dotNet45\Unity.Compat.dll" />
@@ -768,6 +768,10 @@
     <ProjectReference Include="UnityEngine.Purchasing.Stores.Player.csproj">
       <Project>{B5C48DFE-79DE-A64D-1955-84D250396ED1}</Project>
       <Name>UnityEngine.Purchasing.Stores.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.Advertisements.Player.csproj">
+      <Project>{F8B36F76-D617-0FD9-8789-7D66DF2FE1B7}</Project>
+      <Name>UnityEngine.Advertisements.Player</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

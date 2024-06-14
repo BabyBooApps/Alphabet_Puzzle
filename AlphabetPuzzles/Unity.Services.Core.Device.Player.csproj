@@ -56,16 +56,16 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.10.1\Runtime\Device\UserIdProviders\AndroidUtils.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.10.1\Runtime\Device\UserIdProviders\NSUserDefaults.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.10.1\Runtime\Device\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.10.1\Runtime\Device\UserIdProviders\UnityAdsIdentifier.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.10.1\Runtime\Device\UserIdProviders\IUserIdentifierProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.10.1\Runtime\Device\InstallationId.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.10.1\Runtime\Device\UserIdProviders\UnityAnalyticsIdentifier.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Device\UserIdProviders\AndroidUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Device\UserIdProviders\NSUserDefaults.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Device\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Device\UserIdProviders\UnityAdsIdentifier.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Device\UserIdProviders\IUserIdentifierProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Device\InstallationId.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Device\UserIdProviders\UnityAnalyticsIdentifier.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Library\PackageCache\com.unity.services.core@1.10.1\Runtime\Device\Unity.Services.Core.Device.asmdef" />
+    <None Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Device\Unity.Services.Core.Device.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

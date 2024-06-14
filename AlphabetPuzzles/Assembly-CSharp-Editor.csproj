@@ -888,6 +888,14 @@
       <Project>{FA34573D-0F04-A5E2-8198-5FC93C31C1BD}</Project>
       <Name>UnityEditor.SpatialTracking</Name>
     </ProjectReference>
+    <ProjectReference Include="UnityEngine.Advertisements.csproj">
+      <Project>{5FA6D7D4-FA7B-2B1E-D4A7-512584AC6FC4}</Project>
+      <Name>UnityEngine.Advertisements</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.Advertisements.Editor.csproj">
+      <Project>{CEA9163C-208E-8A29-274E-55430DF28CA2}</Project>
+      <Name>UnityEngine.Advertisements.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

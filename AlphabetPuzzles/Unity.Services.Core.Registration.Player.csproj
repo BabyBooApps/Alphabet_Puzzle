@@ -56,11 +56,11 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.10.1\Runtime\Registration\CorePackageInitializer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.10.1\Runtime\Registration\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Registration\CorePackageInitializer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Registration\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Library\PackageCache\com.unity.services.core@1.10.1\Runtime\Registration\Unity.Services.Core.Registration.asmdef" />
+    <None Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Registration\Unity.Services.Core.Registration.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
