@@ -11,20 +11,20 @@
 *.ide
 
 # Ignore Unity files
-*.tga
-*.anim
-*.asset
-*.png
-*.wav
-*.FBX
-*.psd
-*.unity
-*.bmp
-*.jpg
-*.tif
-*.pdf
-*.cubemap
-*.rtf
+#*.tga
+#*.anim
+#*.asset
+#*.png
+#*.wav
+#*.FBX
+#*.psd
+#*.unity
+#*.bmp
+#*.jpg
+#*.tif
+#*.pdf
+#*.cubemap
+#*.rtf
 
 # Ignore generic 3D model files
 *.fbx
