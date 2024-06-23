@@ -56,60 +56,60 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Enums\UnityAdsInitializationError.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Utilities\AssemblyInfoUtilities.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\BannerOptions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Utilities\ApplicationQuit.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\Unsupported\UnsupportedBanner.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\IBanner.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\Android\BannerBundle.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Dispatchers\UnityAdsInitializationListenerMainDispatch.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Enums\UnityAdsShowCompletionState.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Events\FinishEventArgs.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\iOS\IosPlatform.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Banner.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\ShowOptions.cs" />
     <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\Unsupported\UnsupportedPlatform.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Enums\BannerPosition.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Utilities\EnumUtilities.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\INativeBanner.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Utilities\CoroutineExecutor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Enums\ShowResult.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\Editor\BannerPlaceholder.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Utilities\IUnityLifecycleManager.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Dispatchers\UnityAdsShowListenerMainDispatch.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\Android\AndroidBanner.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Listeners\IUnityAdsShowListener.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\BannerLoadOptions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Dispatchers\UnityAdsLoadListenerMainDispatch.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\iOS\IosLoadListener.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\MetaData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Enums\UnityAdsShowError.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Advertisement.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Utilities\Color.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\INativePlatform.cs" />
     <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Events\StartEventArgs.cs" />
     <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\iOS\IosNativeObject.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Banner.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\Editor\EditorPlatform.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Utilities\MiniJSON.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\Android\AndroidInitializationListener.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\Editor\Placeholder.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Enums\UnityAdsLoadError.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Enums\UnityAdsCompletionState.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\Android\AndroidShowListener.cs" />
     <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\Android\AndroidPlatform.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Listeners\IUnityAdsLoadListener.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Listeners\IUnityAdsInitializationListener.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\ShowOptions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Configuration.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\iOS\IosInitializationListener.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\iOS\IosBanner.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Utilities\UnityLifecycleManager.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\iOS\IosShowListener.cs" />
     <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\Platform.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\INativeBanner.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Enums\UnityAdsLoadError.cs" />
     <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\Android\AndroidLoadListener.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\Editor\EditorBanner.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\IBanner.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\iOS\IosBanner.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\iOS\IosPlatform.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Enums\UnityAdsShowCompletionState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Dispatchers\UnityAdsInitializationListenerMainDispatch.cs" />
     <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\IPlatform.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Utilities\CoroutineExecutor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\BannerLoadOptions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\iOS\IosLoadListener.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\Unsupported\UnsupportedBanner.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\Android\BannerBundle.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Enums\BannerPosition.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\Editor\EditorPlatform.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\Editor\Placeholder.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Listeners\IUnityAdsInitializationListener.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\Editor\EditorBanner.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Utilities\IUnityLifecycleManager.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Enums\UnityAdsInitializationError.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Utilities\ApplicationQuit.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\Editor\BannerPlaceholder.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Utilities\Color.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Events\FinishEventArgs.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Enums\ShowResult.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\INativePlatform.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\Android\AndroidInitializationListener.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Listeners\IUnityAdsLoadListener.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Utilities\UnityLifecycleManager.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Enums\UnityAdsShowError.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Advertisement.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Enums\UnityAdsCompletionState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\BannerOptions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Dispatchers\UnityAdsShowListenerMainDispatch.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Dispatchers\UnityAdsLoadListenerMainDispatch.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Utilities\MiniJSON.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\iOS\IosInitializationListener.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Configuration.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Utilities\AssemblyInfoUtilities.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Utilities\EnumUtilities.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Listeners\IUnityAdsShowListener.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\Android\AndroidShowListener.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\iOS\IosShowListener.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\Platform\Android\AndroidBanner.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\MetaData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.ads@4.4.2\Runtime\Advertisement\UnityEngine.Advertisements.asmdef" />
@@ -310,20 +310,38 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\AOT\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="ChannelPurchase">
-      <HintPath>Assets\Plugins\UnityChannel\ChannelPurchase.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
+    <Reference Include="GoogleMobileAds">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.dll</HintPath>
     </Reference>
     <Reference Include="UDP">
       <HintPath>Assets\Plugins\UDP\UDP.dll</HintPath>
     </Reference>
+    <Reference Include="GoogleMobileAds.Ump.Android">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Ump.Android.dll</HintPath>
+    </Reference>
     <Reference Include="UnityStore">
       <HintPath>Assets\Plugins\UnityChannel\UnityStore.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Core">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ChannelPurchase">
+      <HintPath>Assets\Plugins\UnityChannel\ChannelPurchase.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Android">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Common">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Ump">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Ump.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.29f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>

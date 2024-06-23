@@ -58,7 +58,21 @@ public class MenuButtons : MonoBehaviour
             SetTypeButtonSprite();
         }
 
-        
+        if (IAPController.removeAdsStatus != IAPController.IAPStatus.PURCHASED)
+        {
+            StartCoroutine(DisplayAds_IAP.instance.InitializeRoutine());
+        }
+
+        try
+        {
+            if (DisplayAds_IAP.instance != null)
+                DisplayAds_IAP.DisplayInterstitial();
+            //DisplayAds_IAP.instance.DisplayInterstitial();
+        }
+        catch (System.Exception)
+        { }
+
+
     }
 
     void EnableMenuButtons()
@@ -68,6 +82,7 @@ public class MenuButtons : MonoBehaviour
 
     public void LoadMapShadowsScene()
     {
+       
         PlaySound();
         SceneManager.LoadScene("MapShadows");
     }

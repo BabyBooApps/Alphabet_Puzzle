@@ -752,13 +752,13 @@
       <Project>{722FA177-78F2-5B3B-6C11-88323D28183A}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{D72EF7FC-7993-3369-E7DE-CA4EBF033FD3}</Project>
-      <Name>UnityEngine.UI</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{2149D699-340C-11AD-646E-2D6B697029D7}</Project>
       <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{D72EF7FC-7993-3369-E7DE-CA4EBF033FD3}</Project>
+      <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

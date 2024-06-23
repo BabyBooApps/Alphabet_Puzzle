@@ -34,7 +34,7 @@
 
 
 # Ignore Unity Library folder
-#Library/
+Library/
 
 #.vs/
 AlphabetPuzzles/.vs/AlphabetPuzzles/v15/Server/sqlite3/storage.ide-shm

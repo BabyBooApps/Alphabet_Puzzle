@@ -59,8 +59,11 @@
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityOrganizationV1.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Http\AsyncOpRetry.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\ValidationResult.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityPatchProjectV1Request.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Analytics\EnvironmentAnalyticsSender.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Http\UnityWebRequestHelpers.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityGetUserGuestProjects200Response.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityCreateOrganizationRequest.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Scheduler\EngineStateHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\EnvironmentsApiInternal.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Http\ResponseHandler.cs" />
@@ -86,7 +89,9 @@
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Apis\DefaultApi.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\EnvironmentValidator.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Http\DeserializationException.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityUpdateOrganizationRequest.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\ErrorMitigation\RetryPolicy.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityUserOrganizationsV1OrganizationsInner.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityOrganizationMemberV1.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Http\HttpException.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityUserOrganizationsV1.cs" />
@@ -94,7 +99,11 @@
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\EnvironmentServiceRegistry.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Http\IDeserializable.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\EnvironmentService.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityTransferProjectRequest.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityEnvironmentV1.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Analytics\EnvironmentAnalyticEvent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityListOrganizationFavoriteProjects200Response.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityCreateEnvironmentRequest.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\IEnvironmentValidator.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\UI\EnvironmentSelector.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\EnvironmentsApi.cs" />
@@ -103,10 +112,14 @@
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Analytics\EnvironmentChangedParameters.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Apis\DefaultApiRequests.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\ProjectInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityGetEnvironments200Response.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityCreateAddressRequest.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\EnvironmentsConstants.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\ErrorMitigation\IRetryPolicy.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Http\DeserializationSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityGetUserPermissions200Response.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityProjectV1.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityCreateProjectRequest.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Http\JsonObject.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Http\HttpClient.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\EnvironmentNotFoundException.cs" />
@@ -115,6 +128,9 @@
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\ErrorMitigation\RetryPolicyConfig.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Analytics\EnvironmentAnalytics.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Http\BaseApiClient.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityListProjects200Response.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityUploadIconV1201Response.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityGetOrganizationMembers200Response.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityAddressV1.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Scheduler\ThreadHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityUserGuestProjectV1.cs" />
@@ -124,23 +140,7 @@
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\IEnvironmentsApi.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\IEnvironmentProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\UI\EnvironmentView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityGetUserPermissions200Response.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityCreateOrganizationRequest.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityCreateProjectRequest.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityUserOrganizationsV1OrganizationsInner.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityPatchProjectV1Request.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityTransferProjectRequest.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityUploadIconV1201Response.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityListProjects200Response.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Analytics\EnvironmentAnalyticEvent.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityGetEnvironments200Response.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityGetOrganizationMembers200Response.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityListOrganizationFavoriteProjects200Response.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityCreateAddressRequest.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityCreateEnvironmentRequest.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Http\IsolatedJsonConvert.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityGetUserGuestProjects200Response.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\Client\Models\UnityUpdateOrganizationRequest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.services.core@1.12.5\Editor\Core\Environments\UI\Assets\EnvironmentSelectorUi.uss" />
@@ -409,11 +409,35 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.29f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Google.IOSResolver_v1.2.88.0">
-      <HintPath>Assets\PlayServicesResolver\Editor\Google.IOSResolver_v1.2.88.0.dll</HintPath>
+    <Reference Include="Google.VersionHandler">
+      <HintPath>Assets\ExternalDependencyManager\Editor\Google.VersionHandler.dll</HintPath>
     </Reference>
-    <Reference Include="Google.JarResolver_v1.2.88.0">
-      <HintPath>Assets\PlayServicesResolver\Editor\Google.JarResolver_v1.2.88.0.dll</HintPath>
+    <Reference Include="GoogleMobileAds">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Unity">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.5\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
+    <Reference Include="UDP">
+      <HintPath>Assets\Plugins\UDP\UDP.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.PackageManagerResolver">
+      <HintPath>Assets\ExternalDependencyManager\Editor\1.2.177\Google.PackageManagerResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityStore">
+      <HintPath>Assets\Plugins\UnityChannel\UnityStore.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.JarResolver">
+      <HintPath>Assets\ExternalDependencyManager\Editor\1.2.177\Google.JarResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.5\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
@@ -424,35 +448,32 @@
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
+    <Reference Include="GoogleMobileAds.Core">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Ump.Unity">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Ump.Unity.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.5\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Google.VersionHandlerImpl">
+      <HintPath>Assets\ExternalDependencyManager\Editor\1.2.177\Google.VersionHandlerImpl.dll</HintPath>
+    </Reference>
     <Reference Include="ChannelPurchase">
       <HintPath>Assets\Plugins\UnityChannel\ChannelPurchase.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.VersionHandler">
-      <HintPath>Assets\PlayServicesResolver\Editor\Google.VersionHandler.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.5\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
-    <Reference Include="UDP">
-      <HintPath>Assets\Plugins\UDP\UDP.dll</HintPath>
+    <Reference Include="GoogleMobileAds.Common">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Common.dll</HintPath>
     </Reference>
-    <Reference Include="Google.VersionHandlerImpl_v1.2.88.0">
-      <HintPath>Assets\PlayServicesResolver\Editor\Google.VersionHandlerImpl_v1.2.88.0.dll</HintPath>
+    <Reference Include="Google.IOSResolver">
+      <HintPath>Assets\ExternalDependencyManager\Editor\1.2.177\Google.IOSResolver.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityStore">
-      <HintPath>Assets\Plugins\UnityChannel\UnityStore.dll</HintPath>
+    <Reference Include="GoogleMobileAds.Ump">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Ump.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -860,13 +881,13 @@
       <Project>{02448CCD-5B99-E59D-B901-231C56622F88}</Project>
       <Name>Unity.Services.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{D72EF7FC-7993-3369-E7DE-CA4EBF033FD3}</Project>
-      <Name>UnityEngine.UI</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{2149D699-340C-11AD-646E-2D6B697029D7}</Project>
       <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{D72EF7FC-7993-3369-E7DE-CA4EBF033FD3}</Project>
+      <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
       <Project>{722FA177-78F2-5B3B-6C11-88323D28183A}</Project>

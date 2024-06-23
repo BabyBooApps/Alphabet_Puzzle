@@ -11,11 +11,11 @@ public class DisplayAds_IAP : MonoBehaviour
     string appId = "ca-app-pub-6727597482466175~3626105304";//"ca-app-pub-4357894923588656~8844150327";
     string UnityAdId = "5594709";//"1497863";
 
-    //string adUnitId_AdmobBanner = "ca-app-pub-6727597482466175/9844029292"; // test
-    static string adUnitId_AdmobBanner = "ca-app-pub-6727597482466175/9844029292";//"ca-app-pub-4357894923588656/2797616729"; //Alphabet Puzzles Banner
+    string adUnitId_AdmobBanner = "ca-app-pub-6727597482466175/9844029292"; // test
+   // static string adUnitId_AdmobBanner = "ca-app-pub-6727597482466175/9844029292";//"ca-app-pub-4357894923588656/2797616729"; //Alphabet Puzzles Banner
 
-    //string adUnitId_AdmobInterstitial = "ca-app-pub-6727597482466175/7217865958"; // test																				 
-    static string adUnitId_AdmobInterstitial = "ca-app-pub-6727597482466175/7217865958";//"ca-app-pub-4357894923588656/5701941290"; //Alphabet Puzzles Interstitial	
+    string adUnitId_AdmobInterstitial = "ca-app-pub-6727597482466175/7217865958"; // test																				 
+    //static string adUnitId_AdmobInterstitial = "ca-app-pub-6727597482466175/7217865958";//"ca-app-pub-4357894923588656/5701941290"; //Alphabet Puzzles Interstitial	
 
 
     public static BannerView bannerView = null;
@@ -38,8 +38,8 @@ public class DisplayAds_IAP : MonoBehaviour
     public static DisplayAds_IAP instance = null;
 
     static bool displayUnityAd = true;
-    static int interstitialDisplyIndex = 10;
-    static float interstitialDisplayInterval = 40;
+    static int interstitialDisplyIndex = 3;
+    static float interstitialDisplayInterval = 10;
     static float interstitialDisplayTime = 0;
     static int gamePlayIndex = 0;
 
@@ -73,6 +73,8 @@ public class DisplayAds_IAP : MonoBehaviour
         }
     }
 
+    
+
     public int getOptimalSlotSize()
     {
         double density = Density;
@@ -97,20 +99,22 @@ public class DisplayAds_IAP : MonoBehaviour
         // PlayerPrefs.DeleteAll(); // to be commented on producction
         // PlayerPrefs.DeleteKey(IAPController.IAP_STATUS_KEY); // to be commented on production
      
-        MobileAds.Initialize(appId);
+       // MobileAds.Initialize(appId);
         //Advertisement.Initialize(UnityAdId);
         interstitialDisplayTime = Time.time;
 
-        request = new AdRequest.Builder()
-             .AddExtra("is_designed_for_families", "true")
-             .AddExtra("max_ad_content_rating", "G")
-             .TagForChildDirectedTreatment(true)
-             .Build();
+        /* request = new AdRequest.Builder()
+              .AddExtra("is_designed_for_families", "true")
+              .AddExtra("max_ad_content_rating", "G")
+              .TagForChildDirectedTreatment(true)
+              .Build();*/
 
         //request = new AdRequest.Builder().Build();
 
         //currentAdsize = adSize_1;
-        currentAdsize = AdSize.SmartBanner;
+        // currentAdsize = AdSize.SmartBanner;
+
+        // StartCoroutine(InitializeRoutine());
 
         if (PlayerPrefs.GetInt(IAPController.IAP_STATUS_KEY, (int)IAPController.IAPStatus.UNKNOWN) != (int)IAPController.IAPStatus.PURCHASED)
         {
@@ -127,18 +131,23 @@ public class DisplayAds_IAP : MonoBehaviour
     //private static int attemptNo = 0;
     public IEnumerator CheckIAPStatus()
     {
+        Debug.Log("IAP Status : Checking IAP Status");
+
         yield return new WaitForSeconds(3f);
 
         while (IAPController.removeAdsStatus == IAPController.IAPStatus.UNKNOWN)
         {
             Product product = null;
+            Debug.Log("IAP Status :  IAP Status is still unknown");
             try
             {
-                product = CodelessIAPStoreListener.Instance.GetProduct(IAPController.REMOVEADS_PRODUCT_ID);
+                product = CodelessIAPStoreListener.Instance.GetProduct(IAPController.REMOVEADS_PRODUCT_ID); 
+                Debug.Log("IAP Status :  Getting IAP Product Details");
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 IAPController.removeAdsStatus = IAPController.IAPStatus.UNKNOWN;
+                Debug.Log("IAP Status :  Exception in Getting IAP Product Details still IAP Status UNKNOWN : " + ex.Message );
             }
             yield return new WaitForSeconds(2f);
             try
@@ -151,22 +160,26 @@ public class DisplayAds_IAP : MonoBehaviour
                         // Owned Non Consumables and Subscriptions should always have receipts.
                         // So here the Non Consumable product has already been bought.				
                         IAPController.removeAdsStatus = IAPController.IAPStatus.PURCHASED;
+                        Debug.Log("IAP Status :  Product Has Reciept IAP Status PURCHASED");
                     }
                     else
                     {
                         IAPController.removeAdsStatus = IAPController.IAPStatus.NOT_PURCHASED;
+                        Debug.Log("IAP Status :  Product Don't have Reciept IAP Status NOT_PURCHASED");
                     }
                     //SceneManager.LoadScene("Menu");
                 }
                 else
                 {
                     IAPController.removeAdsStatus = IAPController.IAPStatus.UNKNOWN;
+                    Debug.Log("IAP Status :  Product is null IAP Status UNKNOWN");
                 }
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 IAPController.removeAdsStatus = IAPController.IAPStatus.UNKNOWN;
+                Debug.Log("IAP Status :  Exception : " + ex.Message);
             }
             yield return new WaitForSeconds(1f);
         }
@@ -176,10 +189,10 @@ public class DisplayAds_IAP : MonoBehaviour
     IEnumerator CheckRemoveAdsStatus()
     {
         yield return new WaitForSeconds(5f);
-        while (IAPController.removeAdsStatus == IAPController.IAPStatus.UNKNOWN)
+       /* while (IAPController.removeAdsStatus == IAPController.IAPStatus.UNKNOWN)
         {
             yield return new WaitForSeconds(1f);
-        }
+        }*/
 
         if (IAPController.removeAdsStatus == IAPController.IAPStatus.PURCHASED)
         {
@@ -198,18 +211,28 @@ public class DisplayAds_IAP : MonoBehaviour
             catch (Exception) { }
 
         }
-        else if (IAPController.removeAdsStatus == IAPController.IAPStatus.NOT_PURCHASED)
+        /*else if (IAPController.removeAdsStatus == IAPController.IAPStatus.NOT_PURCHASED)
+        {
+            StartCoroutine(InitializeRoutine());
+        }*/
+        else if (IAPController.removeAdsStatus != IAPController.IAPStatus.PURCHASED)
         {
             StartCoroutine(InitializeRoutine());
         }
     }
     #endregion
 
-    IEnumerator InitializeRoutine()
+    public IEnumerator InitializeRoutine()
     {
+        Debug.Log("Ads Status : Loading Ads" );
+
         LoadAdmobBanner();
-        yield return new WaitForSeconds(5f);
+
+        yield return new WaitForSeconds(2f);
+        Debug.Log("Ads Status : Showing banner Ads");
+        ShowAdmobBanner();
         RequestAdmobInterstitial();
+        
     }
 
     #region ADMOB BANNER   
@@ -217,8 +240,11 @@ public class DisplayAds_IAP : MonoBehaviour
     {
         try
         {
-            bannerView = new BannerView(adUnitId_AdmobBanner, currentAdsize, AdPosition.Bottom);
-            bannerView.OnAdFailedToLoad += AdmobBannerAdFailedToLoad;
+            //bannerView = AdsManager.Instance.banner._bannerView;
+            BannerViewController.Instance.LoadAd();
+            bannerView = BannerViewController._bannerView;
+            //bannerView = new BannerView(adUnitId_AdmobBanner, currentAdsize, AdPosition.Bottom);
+            // bannerView.OnAdFailedToLoad += AdmobBannerAdFailedToLoad;
             bannerView.LoadAd(request);
         }
         catch (Exception) { }
@@ -301,18 +327,25 @@ public class DisplayAds_IAP : MonoBehaviour
         {
             if (interstitial != null)
             {
-                if (!interstitial.IsLoaded())
+                //AdsManager.Instance.interstitial.LoadAd();
+                InterstitialAdController.Instance.LoadAd();
+                /*if (!interstitial.CanShowAd())
                 {
-                    interstitial.LoadAd(request);
-                }
+                   // interstitial.LoadAd(request);
+                    AdsManager.Instance.interstitial.LoadAd();
+                }*/
             }
             else
             {
-                interstitial = new InterstitialAd(adUnitId_AdmobInterstitial);
-                interstitial.OnAdClosed += OnAdmobInterstitialClosed;
-                interstitial.OnAdOpening += OnAdmobInterstitialOpened;
-                interstitial.OnAdFailedToLoad += OnAdmobInterstitialFailedToLoad;
-                interstitial.LoadAd(request);
+                //interstitial = new InterstitialAd(adUnitId_AdmobInterstitial);
+                //interstitial = AdsManager.Instance.interstitial._interstitialAd;
+                interstitial = InterstitialAdController._interstitialAd;
+                InterstitialAdController.Instance.LoadAd();
+
+               // interstitial.OnAdFullScreenContentClosed += OnAdmobInterstitialClosed;
+              //  interstitial.OnAdOpening += OnAdmobInterstitialOpened;
+               // interstitial.OnAdFailedToLoad += OnAdmobInterstitialFailedToLoad;
+              //  interstitial.LoadAd(request);
             }
         }
         catch (Exception) { }
@@ -323,14 +356,14 @@ public class DisplayAds_IAP : MonoBehaviour
     {
         try
         {
-            if (args.Message.ToLower().Contains("no fill"))
+           /* if (args.Message.ToLower().Contains("no fill"))
             {
                 StartCoroutine(RequestAnotherAdmobInterstitial(10f));
             }
             else
             {
                 StartCoroutine(RequestAnotherAdmobInterstitial(30f));
-            }
+            }*/
         }
         catch (Exception)
         { }
@@ -401,7 +434,7 @@ public class DisplayAds_IAP : MonoBehaviour
     {
         try
         {
-            if (IAPController.removeAdsStatus == IAPController.IAPStatus.NOT_PURCHASED)
+            if (IAPController.removeAdsStatus != IAPController.IAPStatus.PURCHASED)
             {
                 gamePlayIndex = gamePlayIndex + incrementBy;
 
@@ -410,14 +443,14 @@ public class DisplayAds_IAP : MonoBehaviour
                 
                 if (gamePlayIndex < interstitialDisplyIndex)
                     return;
-                
-                if (interstitial.IsLoaded())  // admob
+
+                if (interstitial != null)  // admob
                 {
                     gamePlayIndex = 0;
                     interstitialDisplayTime = Time.time;
-                    interstitial.Show();
+                    InterstitialAdController.Instance.ShowAd();
                 }
-               /* else if (Advertisement.IsReady())  // unity ads
+                /*else if (Advertisement.IsReady())  // unity ads
                 {
                     gamePlayIndex = 0;
                     interstitialDisplayTime = Time.time;
@@ -436,11 +469,11 @@ public class DisplayAds_IAP : MonoBehaviour
         try
         {
             if (bannerView != null)
-                bannerView.OnAdFailedToLoad -= AdmobBannerAdFailedToLoad;
+              //  bannerView.OnAdFailedToLoad -= AdmobBannerAdFailedToLoad;
             if (interstitial != null)
             {
-                interstitial.OnAdFailedToLoad -= OnAdmobInterstitialFailedToLoad;
-                interstitial.OnAdClosed -= OnAdmobInterstitialClosed;
+               /* interstitial.OnAdFailedToLoad -= OnAdmobInterstitialFailedToLoad;
+                interstitial.OnAdClosed -= OnAdmobInterstitialClosed;*/
             }
         }
         catch (Exception) { }

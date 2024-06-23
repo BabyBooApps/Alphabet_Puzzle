@@ -56,20 +56,25 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Authentication\IServerAccessToken.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Registry\DependencyTreeExceptions.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Analytics\IAnalyticsStandardEventComponent.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Authentication\IPlayerId.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Configuration\IProjectConfiguration.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Authentication\IAccessTokenObserver.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Registry\CoreRegistration.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Registry\ServiceRegistry\IServiceRegistry.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Registry\IInitializablePackage.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Registry\CoreRegistryInitializer.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Registry\ComponentRegistry\ComponentRegistry.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Wire\IChannel.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\AsyncOperation\IAsyncOperationAwaiter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Registry\ServiceRegistry\ServiceRegistry.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Telemetry\IDiagnostics.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Utils\UnityWebRequestUtils.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\UnityServicesInternal.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Registry\ServiceRegistry\LockedServiceRegistry.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\AsyncOperation\AsyncOperationAwaiter.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Wire\IChannelTokenProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Serialization\NewtonsoftSerializer.cs" />
@@ -92,18 +97,23 @@
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Registry\ComponentRegistry\IComponentRegistry.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Networking\HttpResponse.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Registry\PackageRegistry\IPackageRegistry.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Registry\IInitializablePackageV2.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Authentication\IServerEnvironmentId.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\UnityServicesInitializer.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\AsyncOperation\IAsyncOperation.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Configuration\ICloudProjectId.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Vivox\IVivoxTokenProviderInternal.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Networking\HttpOptions.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Wire\ChannelToken.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Registry\CorePackageRegistry.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Authentication\IAccessToken.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Wire\SubscriptionState.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Wire\IWire.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Telemetry\CoreMetrics.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Networking\HttpRequestExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Authentication\IEnvironmentId.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\AsyncOperation\AsyncOperationStatus.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Telemetry\CoreDiagnostics.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Registry\DependencyTreeExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Device\IInstallationId.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Telemetry\IDiagnosticsComponentProvider.cs" />
@@ -119,21 +129,11 @@
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Registry\PackageInitializationInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Registry\CircularDependencyException.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Environments\IEnvironments.cs" />
+    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\UnityServicesEditorInitializer.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\AsyncOperation\AsyncOperation.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Scheduler\IActionScheduler.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Registry\CoreRegistry.cs" />
     <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Telemetry\IDiagnosticsFactory.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Authentication\IServerAccessToken.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Authentication\IAccessTokenObserver.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Registry\ServiceRegistry\ServiceRegistry.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Registry\IInitializablePackageV2.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Components\Authentication\IServerEnvironmentId.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Telemetry\CoreDiagnostics.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Registry\ServiceRegistry\IServiceRegistry.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Telemetry\CoreMetrics.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Registry\CorePackageRegistry.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\UnityServicesEditorInitializer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Registry\ServiceRegistry\LockedServiceRegistry.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.services.core@1.12.5\Runtime\Core.Internal\Unity.Services.Core.Internal.asmdef" />
@@ -385,11 +385,35 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.29f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Google.IOSResolver_v1.2.88.0">
-      <HintPath>Assets\PlayServicesResolver\Editor\Google.IOSResolver_v1.2.88.0.dll</HintPath>
+    <Reference Include="Google.VersionHandler">
+      <HintPath>Assets\ExternalDependencyManager\Editor\Google.VersionHandler.dll</HintPath>
     </Reference>
-    <Reference Include="Google.JarResolver_v1.2.88.0">
-      <HintPath>Assets\PlayServicesResolver\Editor\Google.JarResolver_v1.2.88.0.dll</HintPath>
+    <Reference Include="GoogleMobileAds">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Unity">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.5\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
+    <Reference Include="UDP">
+      <HintPath>Assets\Plugins\UDP\UDP.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.PackageManagerResolver">
+      <HintPath>Assets\ExternalDependencyManager\Editor\1.2.177\Google.PackageManagerResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityStore">
+      <HintPath>Assets\Plugins\UnityChannel\UnityStore.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.JarResolver">
+      <HintPath>Assets\ExternalDependencyManager\Editor\1.2.177\Google.JarResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.5\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
@@ -400,35 +424,32 @@
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
+    <Reference Include="GoogleMobileAds.Core">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Ump.Unity">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Ump.Unity.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.5\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Google.VersionHandlerImpl">
+      <HintPath>Assets\ExternalDependencyManager\Editor\1.2.177\Google.VersionHandlerImpl.dll</HintPath>
+    </Reference>
     <Reference Include="ChannelPurchase">
       <HintPath>Assets\Plugins\UnityChannel\ChannelPurchase.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.VersionHandler">
-      <HintPath>Assets\PlayServicesResolver\Editor\Google.VersionHandler.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.5\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
-    <Reference Include="UDP">
-      <HintPath>Assets\Plugins\UDP\UDP.dll</HintPath>
+    <Reference Include="GoogleMobileAds.Common">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Common.dll</HintPath>
     </Reference>
-    <Reference Include="Google.VersionHandlerImpl_v1.2.88.0">
-      <HintPath>Assets\PlayServicesResolver\Editor\Google.VersionHandlerImpl_v1.2.88.0.dll</HintPath>
+    <Reference Include="Google.IOSResolver">
+      <HintPath>Assets\ExternalDependencyManager\Editor\1.2.177\Google.IOSResolver.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityStore">
-      <HintPath>Assets\Plugins\UnityChannel\UnityStore.dll</HintPath>
+    <Reference Include="GoogleMobileAds.Ump">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Ump.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.29f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
@@ -808,13 +829,13 @@
       <Project>{02448CCD-5B99-E59D-B901-231C56622F88}</Project>
       <Name>Unity.Services.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{D72EF7FC-7993-3369-E7DE-CA4EBF033FD3}</Project>
-      <Name>UnityEngine.UI</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{2149D699-340C-11AD-646E-2D6B697029D7}</Project>
       <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{D72EF7FC-7993-3369-E7DE-CA4EBF033FD3}</Project>
+      <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

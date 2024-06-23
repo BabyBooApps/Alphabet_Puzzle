@@ -109,6 +109,7 @@
     <None Include="Assets\Plugins\UnityChannel\UnityStore.dll" />
     <None Include="Assets\Plugins\UnityChannel\ChannelPurchase.dll" />
     <None Include="Assets\Plugins\UDP\UDP.dll" />
+    <None Include="Assets\Plugins\Android\proguard-user.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -306,20 +307,38 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\AOT\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="ChannelPurchase">
-      <HintPath>Assets\Plugins\UnityChannel\ChannelPurchase.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
+    <Reference Include="GoogleMobileAds">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.dll</HintPath>
     </Reference>
     <Reference Include="UDP">
       <HintPath>Assets\Plugins\UDP\UDP.dll</HintPath>
     </Reference>
+    <Reference Include="GoogleMobileAds.Ump.Android">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Ump.Android.dll</HintPath>
+    </Reference>
     <Reference Include="UnityStore">
       <HintPath>Assets\Plugins\UnityChannel\UnityStore.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Core">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ChannelPurchase">
+      <HintPath>Assets\Plugins\UnityChannel\ChannelPurchase.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Android">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Common">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Ump">
+      <HintPath>Assets\GoogleMobileAds\GoogleMobileAds.Ump.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.29f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -705,6 +724,10 @@
       <Project>{767F7AA9-E14D-4EFD-EF17-16FC382F0512}</Project>
       <Name>Unity.TextMeshPro.Player</Name>
     </ProjectReference>
+    <ProjectReference Include="UnityEngine.Advertisements.Player.csproj">
+      <Project>{F8B36F76-D617-0FD9-8789-7D66DF2FE1B7}</Project>
+      <Name>UnityEngine.Advertisements.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEngine.Purchasing.Security.Player.csproj">
       <Project>{972C3403-72C2-428B-232D-FED021AF6C81}</Project>
       <Name>UnityEngine.Purchasing.Security.Player</Name>
@@ -748,10 +771,6 @@
     <ProjectReference Include="UnityEngine.Purchasing.Stores.Player.csproj">
       <Project>{B5C48DFE-79DE-A64D-1955-84D250396ED1}</Project>
       <Name>UnityEngine.Purchasing.Stores.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.Advertisements.Player.csproj">
-      <Project>{F8B36F76-D617-0FD9-8789-7D66DF2FE1B7}</Project>
-      <Name>UnityEngine.Advertisements.Player</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -63,6 +63,7 @@
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Editor\MenuItems\ItemCreationUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Editor\GooglePlayProductCatalogExporter.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Editor\ServiceProjectSettings\Service\GoogleConfigService.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Editor\ServiceProjectSettings\Service\Networking\GetGoogleKeyWebRequest.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Editor\Analytics\PurchasingServiceAnalyticsSender.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Editor\ServiceProjectSettings\UI\Views\PlatformsAndStoresEnabledServiceSettingsBlock.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Editor\CodelessIAPButtonEditor.cs" />
@@ -111,6 +112,7 @@
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Editor\Analytics\Entity\EventSources.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Editor\ServiceProjectSettings\UI\Views\Obfuscator\AbstractObfuscatorSection.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Editor\Analytics\Events\GenericEditorGameServiceEvent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Editor\ServiceProjectSettings\Service\Networking\Models\GooglePlayKeyRequestResult.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Editor\WinRTPatcher.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Editor\SwitchStoreEditorWindow.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Editor\AppleCapabilities.cs" />
@@ -149,8 +151,6 @@
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Editor\ServiceProjectSettings\Service\Networking\NetworkingUtils.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Editor\Analytics\Entity\EventActions.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Editor\MenuItems\IapButtonMenu.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Editor\ServiceProjectSettings\Service\Networking\Models\GooglePlayKeyRequestResult.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Editor\ServiceProjectSettings\Service\Networking\GetGoogleKeyWebRequest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.purchasing@4.12.0\Editor\ServiceProjectSettings\UI\UXML\AnalyticsWarning.uxml" />
@@ -842,13 +842,13 @@
       <Project>{10908A8E-99AC-436D-E948-0757AE571798}</Project>
       <Name>Unity.Services.Core.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{D72EF7FC-7993-3369-E7DE-CA4EBF033FD3}</Project>
-      <Name>UnityEngine.UI</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{2149D699-340C-11AD-646E-2D6B697029D7}</Project>
       <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{D72EF7FC-7993-3369-E7DE-CA4EBF033FD3}</Project>
+      <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
       <Project>{722FA177-78F2-5B3B-6C11-88323D28183A}</Project>

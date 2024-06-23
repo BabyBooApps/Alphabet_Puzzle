@@ -27,7 +27,7 @@ public class IAPController : MonoBehaviour
 
     private void Awake()
     {
-        gameObject.GetComponent<Image>().enabled = false;
+       // gameObject.GetComponent<Image>().enabled = false;
         //transform.GetChild(0).gameObject.SetActive(false);
 
     }
@@ -40,12 +40,15 @@ public class IAPController : MonoBehaviour
     {
         while (removeAdsStatus == IAPStatus.UNKNOWN)
         {
+            Debug.Log("IAP Status : is UNKNOWN");
             yield return new WaitForSeconds(1f);
+
         }
 
         if (removeAdsStatus == IAPStatus.PURCHASED)
         {
             //gameObject.SetActive(false);
+            Debug.Log("IAP Status : is PURCHASED");
             gameObject.GetComponent<Image>().enabled = false;
             //transform.GetChild(0).GetComponent<Text>().enabled = false;
             //transform.GetChild(0).gameObject.SetActive(false);
@@ -53,6 +56,7 @@ public class IAPController : MonoBehaviour
         else if (removeAdsStatus == IAPStatus.NOT_PURCHASED)
         {
             //gameObject.SetActive(true);
+            Debug.Log("IAP Status : is NOT_PURCHASED");
             gameObject.GetComponent<Image>().enabled = true;
             //transform.GetChild(0).GetComponent<Text>().enabled = true;
             //transform.GetChild(0).gameObject.SetActive(true);

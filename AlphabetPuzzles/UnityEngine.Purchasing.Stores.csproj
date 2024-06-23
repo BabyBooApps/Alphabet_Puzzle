@@ -125,6 +125,7 @@
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\FakeStore\UIFakeStore.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\Android\GooglePlay\AAR\Models\ProductDescriptionQuery.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\AppleAppStore\FakeAppleExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\Util\GoogleConnectionRetryPolicy.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\Android\GooglePlay\GooglePlayPurchaseCallback.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\AppleAppStore\AppleAppStore.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\ProductCatalog.cs" />
@@ -200,7 +201,6 @@
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\Android\GooglePlay\Interfaces\IGooglePlayStoreExtensionsInternal.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\Android\GooglePlay\Models\GoogleBillingResponseCode.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\FakeStore\IFakeExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\Util\GoogleConnectionRetryPolicy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\UnityEngine.Purchasing.Stores.asmdef" />
@@ -870,13 +870,13 @@
       <Project>{D29AF7A7-E2DA-ACF5-6A35-2F040FFA61AB}</Project>
       <Name>Unity.Services.Core.Internal</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{D72EF7FC-7993-3369-E7DE-CA4EBF033FD3}</Project>
-      <Name>UnityEngine.UI</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{2149D699-340C-11AD-646E-2D6B697029D7}</Project>
       <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{D72EF7FC-7993-3369-E7DE-CA4EBF033FD3}</Project>
+      <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -125,6 +125,7 @@
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\FakeStore\UIFakeStore.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\Android\GooglePlay\AAR\Models\ProductDescriptionQuery.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\AppleAppStore\FakeAppleExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\Util\GoogleConnectionRetryPolicy.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\Android\GooglePlay\GooglePlayPurchaseCallback.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\AppleAppStore\AppleAppStore.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\ProductCatalog.cs" />
@@ -200,7 +201,6 @@
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\Android\GooglePlay\Interfaces\IGooglePlayStoreExtensionsInternal.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\Android\GooglePlay\Models\GoogleBillingResponseCode.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\FakeStore\IFakeExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\Util\GoogleConnectionRetryPolicy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.purchasing@4.12.0\Runtime\Stores\UnityEngine.Purchasing.Stores.asmdef" />

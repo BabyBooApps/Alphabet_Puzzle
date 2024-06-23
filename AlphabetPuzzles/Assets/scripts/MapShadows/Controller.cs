@@ -81,6 +81,11 @@ public class Controller : MonoBehaviour
 
         string appreciate = "appreciate_" + GenerateRand().ToString();
         appreciateSound = (AudioClip)Resources.Load("appreciate/" + appreciate);
+
+        if (IAPController.removeAdsStatus != IAPController.IAPStatus.PURCHASED)
+        {
+            StartCoroutine(DisplayAds_IAP.instance. InitializeRoutine());
+        }
     }
 
     int GenerateRand()
