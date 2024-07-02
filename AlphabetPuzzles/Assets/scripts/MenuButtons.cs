@@ -102,7 +102,7 @@ public class MenuButtons : MonoBehaviour
     public void OpenPlaystore(string url)
     {
         PlaySound();
-        Application.OpenURL("https://play.google.com/store/apps/details?id=" + url);
+        Application.OpenURL("https://play.google.com/store/apps/details?id=com.BabyBooApps.AlphabetPuzzle");
     }
 
     void PlaySound()

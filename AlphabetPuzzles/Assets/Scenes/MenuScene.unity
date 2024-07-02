@@ -124,6 +124,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &721945892 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 37232597817402748, guid: 5fb988d681bf23943b04ff531b226472,
+    type: 3}
+  m_PrefabInstance: {fileID: 37232598755939427}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c52c977e2c521343ac3faf3e52320b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1121313686
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,6 +304,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 37232597502344380, guid: 5fb988d681bf23943b04ff531b226472,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 37232597502344380, guid: 5fb988d681bf23943b04ff531b226472,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 37232597502344380, guid: 5fb988d681bf23943b04ff531b226472,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 721945892}
+    - target: {fileID: 37232597502344380, guid: 5fb988d681bf23943b04ff531b226472,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 37232597502344380, guid: 5fb988d681bf23943b04ff531b226472,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenPlaystore
+      objectReference: {fileID: 0}
+    - target: {fileID: 37232597502344380, guid: 5fb988d681bf23943b04ff531b226472,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuButtons, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 37232597502344380, guid: 5fb988d681bf23943b04ff531b226472,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 37232597817402688, guid: 5fb988d681bf23943b04ff531b226472,
         type: 3}
       propertyPath: m_Camera
